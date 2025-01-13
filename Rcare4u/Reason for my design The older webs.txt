@@ -1,0 +1,20 @@
+Reason for my design: The older website requires users to scroll down to find a service. I addressed this by providing all the necessary elements in the same area
+
+Header -> The logo, Drop Down Contact us, Select Your city, healthcare services, An account symbol
+Account symbol -> My orders & Appointments, sign out
+
+
+Body - > A Good Image
+
+
+Footer ->
+About us, Privacy Policy, Terms and condition, Copyright Haaku C2022, All Rights Reserved. Powered by Haaku.
+
+
+
+Pharmacy->
+Header-> logo, Home,
+
+Body-> Pharmacies for doorstep delivery (row of flex items, each item has name, img and location)
+
+footer -> exact same footer
