@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runofresh - Order and buy organic food products</title>
+    <link rel="icon" href="media/icon/download.ico" type="image/x-icon">
+
+ <!--Swiper cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Custom CSS file link-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--Header section starts-->
+    <header class="header">
+        <a href="#" class="logo"><img src="media/homepage/logo.png" alt="logo" height="35"></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-bar"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here.... ">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            
+            <div class="total"> total :0/-</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+
+        <form class="login-form" id="login-form">
+            <h3>login now</h3>
+            <input type="email" name="email" placeholder="Your email" class="box" />
+            <input type="password" name="password" placeholder="Your password" class="box" />
+            <p>Forget your password?<a href="#"> click here</a></p>
+            <p>Don't have an account? <a id="create-account" href="#"> create now</a></p>
+            <input id="submit-btn" type="submit" value="login now" class="btn" />
+        </form>
+
+<!-- Account -->
+
+        <div class="account-section" id="acoount-section">
+            <h3>hello!</h3>
+            <h3></h3>
+            <button class="btn" id="logout-btn">logout</button>
+        </div>
+
+<!-- sign up -->
+
+        <form  class="signup">
+            <div class="top-wrapper">
+                <h3>Sign Up</h3>
+                <h3 class="btn cancel-button">cancel</h3>
+                </div>
+            <input type="email" name="email" placeholder="your email" />
+            <input type="name" name="name" placeholder="your name" />
+            <input type="password" name="Password" placeholder="your password" />
+            <button type="button" class="btn signup-button">Submit</button>
+        </form>
+    </header>
+
+    <!--Header sesction ends-->
+
+    <!--Home section starts-->
+
+     <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh and <span>organic</span> products for your</h3>
+            <p>Discover the finest selection of fresh, organic produce handpicked for your family. Experience the taste of nature's best, delivered to your door
+            </p>
+            <a href="#" class="main-btn">Shop now</a>
+        </div>
+     </section>
+
+    <!--Home section ends-->
+
+    <!--Features section starts-->
+
+      <section class="features" id="features">
+        <h1 class="heading"> our <span>features</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="media/homepage/large-set-isolated-vegetables-white-background.jpg" alt="photo" height="200px">
+                <h3>fresh and organic</h3>
+                <p>Enjoy a variety of fresh and organic produce, carefully sourced to ensure quality and taste. Perfect for healthy living.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="media/homepage/rb_2151558566.png" alt="photo" height="200px">
+                <h3>fast delivery</h3>
+                <p>Get your favorite products delivered to your doorstep swiftly. Experience convenience with every order.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="media/homepage/rb_2886.png" alt="photo" height="200px">
+                <h3>easy payments</h3>
+                <p>Choose from multiple payment options designed for your ease and security. Shopping made simple.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+      </section>
+
+    <!--Features section ends-->
+
+    <!--Products section starts-->
+
+    <section class="products" id="products">
+        <h1 class="heading"> our <span>categories</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper" id="product-carousel">
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!--Products section starts-->
+
+    <!--Categories section starts-->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading">Our <span>Product</span></h1>
+
+        <div class="box-container" id="js-image-add">
+
+        </div>
+    </section>
+
+    <!--Categories section ends-->
+
+    <!--Review section starts-->
+     <section class="review" id="review">
+
+        <h1 class="heading"> Customer's <span>reviews</span></h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper" id="profile-carousel">
+                <div class="swiper-slide box">
+                    <img src="" alt="person1">
+                    <p>The organic fruits and vegetables are always fresh and flavorful. Supporting local farmers while enjoying such high quality is a win-win!</p>
+                    <h3>Olivia Brown</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="" alt="person2">
+                    <p>I’ve never tasted produce this fresh before! The quality and care put into these products are evident. Highly recommended!</p>
+                    <h3>Ethan Wilson</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="" alt="person3">
+                    <p>Absolutely love this service! It’s convenient, and the organic options are perfect for my family’s health-conscious lifestyle.</p>
+                    <h3>Sophia Carter</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="" alt="person4">
+                    <p>The variety of organic products is impressive! Every purchase has been fresh, delicious, and sustainably sourced. A fantastic experience!</p>
+                    <h3>Emily Johnson</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="" alt="person5">
+                    <p>The quality of the organic produce is outstanding! Everything is fresh, natural, and supports local farming—couldn’t ask for more!</p>
+                    <h3>James Miller</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!--Review section ends-->
+    
+    <!--Blog section starts-->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> Our <span>blogs</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="media/1.jpg" alt="blog1">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by pragyan@12</a>
+                        <a href="#"><i class="fas fa-calender"></i> 3rd january,2025</a>
+                    </div>
+                    <h3>Fresh and organic vagitables and meats</h3>
+                    <p>Discover the best of fresh and organic vegetables and ethically sourced meats. Our local farmers bring you produce and meats grown naturally, free from harmful chemicals, ensuring healthy and nutritious meals for your family</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="media/2.jpg" alt="blog2">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by jintu_1</a>
+                        <a href="#"><i class="fas fa-calender"></i> 3rd january,2025</a>
+                    </div>
+                    <h3>Fresh and organic fruts</h3>
+                    <p>Indulge in the natural sweetness of organic fruits grown with care. Packed with nutrients and free from harmful pesticides, our fruits come directly from trusted local farms to your table.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="media/3.jpg" alt="blog3">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by _pritam_</a>
+                        <a href="#"><i class="fas fa-calender"></i> 3rd january,2025</a>
+                    </div>
+                    <h3>Why fresh?</h3>
+                    <p>Freshness matters! Local organic food retains more nutrients, tastes better, and supports the environment. Learn why choosing fresh and organic food is the first step toward a healthier, sustainable lifestyle.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Blog section ends-->
+
+    <!--Footer section starts-->
+
+    <section class="footer">
+         
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Runofresh<i class="fas fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, ipsam?</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +123-478-5678 </a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +111-222-333 </a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> abc123@gmail.com </a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Shillong, india </a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> reviews </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> blogs </a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="/media/icon/credit card.png" class="payment-img" alt="payment-img">
+            </div>
+        </div>
+
+        <div class="credit"> runofresh | all rights reserved</div>
+    </section>
+
+    <!--Footer section starts-->
+
+
+
+
+    <!--Custom js file link-->
+    <script src="js/script.js"></script>
+
+    <!--swiper.js file link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.product-slider', {
+            loop: true, // Enable continuous loop
+            autoplay: {
+                delay: 3000, // Set delay in milliseconds
+                disableOnInteraction: false, // Autoplay continues even after user interaction
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+              768: {
+                slidesPerView: 2, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+              1024: {
+                slidesPerView: 3, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+            },
+        });
+
+
+        var swiper = new Swiper('.review-slider', {
+            loop: true, // Enable continuous loop
+            autoplay: {
+                delay: 3000, // Set delay in milliseconds
+                disableOnInteraction: false, // Autoplay continues even after user interaction
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+              768: {
+                slidesPerView: 2, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+              1024: {
+                slidesPerView: 3, // Adjust based on your needs
+            spaceBetween: 10, // Space between slides
+              },
+            },
+        });
+    </script>
+    
+</body>
+</html>
